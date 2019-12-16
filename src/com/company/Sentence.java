@@ -20,15 +20,18 @@ public class Sentence {
 
 
     /**
-     * Returns the index of the nth occurrence of str in the current sencence;
+     * Returns the index of the nth occurrence of str in the current sentence;
      * returns -1 of the nth occurrence does not exist.
      * Precondition:  str.length() > 0 and n > 0
      * Postcondition: the current sentence if not modified.
      */
     public int findNthTime(String x, int y) {
-        int a = 0;
-        if (currSent.indexOf(x) < 0 ) {
-            a = currSent.indexOf(x);
+        int a = y;
+        while (a > 0) {
+            if (currSent.indexOf(x, currSent.indexOf(x)) < 0) {
+                return -1;
+            }
+            a--;
         }
         return a;
     }
