@@ -27,9 +27,11 @@ public class Sentence {
      */
     public int findNthTime(String x, int y) {
         int a = y;
-        int b = currSent.indexOf(x, currSent.indexOf(x) + 1);
+        int b = 0;
         while (a > 0) {
+            b = currSent.indexOf(x, b + 1);
             if (b < 0) {
+
                 return -1;
             }
             a--;
@@ -43,8 +45,15 @@ public class Sentence {
      * If the nth occurrence does not exist, the current sentence is unchanged.
      * Precondition: str.length() > 0 and n > 0
      */
-    public void replaceNthTime(String str, int n, String repl) {
+    public void replaceNthTime(String x, int y, String z) {
+        findNthTime(x,y);
+        int a = 0;
+        while (a < y) {
+            
+            a++;
+        }
         /*  part b - you must call findNthTime here */
+
     }
 
     /**
