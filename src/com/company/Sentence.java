@@ -27,13 +27,14 @@ public class Sentence {
      */
     public int findNthTime(String x, int y) {
         int a = y;
+        int b = currSent.indexOf(x, currSent.indexOf(x) + 1);
         while (a > 0) {
-            if (currSent.indexOf(x, currSent.indexOf(x)) < 0) {
+            if (b < 0) {
                 return -1;
             }
             a--;
         }
-        return a;
+        return b;
     }
 
 
