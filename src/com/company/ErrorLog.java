@@ -48,3 +48,12 @@ public class ErrorLog {
     }
 
 }
+/*
+Output
+message 1 false
+message 2 true
+message 3 true
+message 4 true
+message 5 true
+message 6 true
+ */

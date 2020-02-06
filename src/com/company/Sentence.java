@@ -110,3 +110,19 @@ public class Sentence {
         System.out.println(sentence6.findLastTime("bat"));
     }
 }
+/*
+        Output
+        3
+        A crane ate late.
+        -1
+        A cat ate late.
+        11
+        A cat ate lxxe.
+        -1
+        A cat ate late.
+        axxa
+        aabbb
+        11
+        2
+        -1
+*/
